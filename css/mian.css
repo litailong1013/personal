@@ -1,0 +1,122 @@
+body{
+	min-width: 960px;
+	background: #fff;	
+}
+
+
+
+
+
+.mainvisual{
+	/*background: #636ce1;*/
+	/*height:200px*/;
+}
+.mainvisual img{
+	width: 100%;
+}
+.mainvisual .mainvisual-textarea{
+	position: absolute;
+	top: 26%;
+	width: 100%;
+}
+.mainvisual .mainvisual-textarea img{
+	width: 76%;
+	margin:0 auto 10px;
+}
+
+/*.mainvisual*/
+
+.profile{
+	background: #e7f3fd;
+	/*height:800px;*/
+}
+
+
+
+
+.profile .profile-mian{
+	/*background:#29a8e3;*/
+	height:460px;
+	width: 680px;
+	margin: 0 auto;
+}
+.profile .profile-img {
+float:left;
+width: 36%;
+}
+.profile .profile-img img {
+	width: 100%;
+}
+.profile  .profile-desc{
+	padding:0;
+	width: 56%;
+	float: right;
+
+}
+
+.profile  .profile-name{
+	margin: 0 0 10px
+}
+.profile  .profile-info{
+	margin: 0 0 20px;
+	line-height:1.8;
+}
+.profile .profile-text {
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+/*profile*/
+
+
+
+.works{
+/*	background: #62c4f2;*/
+}
+.works .works-list{
+	margin:0 auto;
+	width: 920px;
+	/*background: blue;*/
+}
+.works .works-list ul{
+ margin-bottom: 28px;
+}
+
+.works .works-item{
+	float: left;
+	margin: 15px;
+    /*width: 25%;*/
+}
+.works .works-item img{
+	width:200px;
+/*	height:174px;*/
+}
+
+
+/*.works .works-item :hover{
+width:198px;
+height:172px;
+
+border:1px solid yellow;
+}
+*/
+.works .works-item-title{
+	float: left;
+	margin-top: 12px;
+	font-size: 100%;
+	line-height:18px;
+}
+.works  .works-item-title .genre{
+	font-size: 80%;
+}
+.works .num{
+	float: right;
+	font-size: 280%;
+	font-weight: 900;
+}
+
+
+/*works*/
+
+
+
+

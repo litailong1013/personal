@@ -1,0 +1,91 @@
+.subnav{
+	/*background: #66a7c0;*/
+	text-align: center;
+	padding: 66px 0;
+	font-size: 0.8em;
+}
+
+
+.subnav ul li{
+	    display: inline-block;
+	    padding: 10px;
+
+	
+}
+
+/*subnav*/
+.page-container{
+	width: 960px;
+	margin:0 auto;
+	/*background: #904bc1;*/
+	
+}
+
+.page-container .page-container-item{
+/*	background: blue;*/
+
+}
+
+
+{
+	margin-top: 20px;
+}
+
+.entry-meta .entry-date{
+	font-size:0.8em;
+}
+.entry-meta .entry-category{
+		font-size:0.6em;
+		color: #b6e4f7;
+		font-style:italic;
+}
+
+.entry-title{
+	padding-bottom: 12px;
+	margin-bottom: 26px;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.page-container .page-mian{
+	width: 58%;
+	float: left;
+/*	background: #89f7e9;*/
+	border-right: 1px solid #c1c1c1;
+}
+.page-container .page-mian img{
+	width: 100%;
+}
+
+.page-container .entry-body{
+padding:0 20px 12% 0px;
+
+}
+
+
+.page-container .page-side{
+	padding:0 0 0 46px; 
+	width: 37%;
+	float: left;
+}
+
+.page-container .page-side .num{
+	font-size: 286%;
+	font-weight: 900;
+}
+
+.page-container .page-side .page-side-text{
+	font-size: 110%;
+	line-height:2;
+}
+
+.page-container .page-side .textarea{
+	padding-top: 30px;
+	color: #323232;
+	line-height:1.6;
+}
+
+
+
+
+
+
