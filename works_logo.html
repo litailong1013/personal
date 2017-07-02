@@ -6,21 +6,6 @@
 <link rel="stylesheet" type="text/css" href="css/works.css">
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/common.css">
-<script>
-var nav;
-window.onload=function(){ 
-	nav=document.getElementById("header");
-	console.log(nav);
-	nav.style.display="none";
-}
-function show_nav_bar(){
-    if(nav.style.display=="none"){
-		nav.style.display="block";        
-    }else{
-    	nav.style.display="none"; 
-    }
-}  
-</script>
 </head>
 <body>
 <div class="fix-copy"><font>LI TAILONG THINK, DESION</font></div>
@@ -211,7 +196,21 @@ function show_nav_bar(){
 </div><!-- page-container -->
 
 
-
+<script>
+var nav;
+window.onload=function(){ 
+	nav=document.getElementById("header");
+	console.log(nav);
+	nav.style.display="none";
+}
+function show_nav_bar(){
+    if(nav.style.display=="none"){
+		nav.style.display="block";        
+    }else{
+    	nav.style.display="none"; 
+    }
+}  
+</script>
 
 </body>
 </html>
