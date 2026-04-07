@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>動画 | Litailong Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/site.css" />
+    <style>
+      html {
+        scrollbar-gutter: stable;
+      }
+
+      body[data-page="video"] {
+        overflow-y: scroll;
+      }
+
+      .video-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.88fr) minmax(420px, 1.12fr);
+        gap: 36px;
+        align-items: start;
+      }
+
+      .video-panel__thumbs {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px 22px;
+      }
+
+      .video-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 0;
+      }
+
+      .video-card__thumb {
+        width: 100%;
+        background: #d9d9d9;
+        overflow: hidden;
+      }
+
+      .video-card__thumb img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .video-panel__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 6px;
+      }
+
+      .video-panel__body .web-item__head {
+        margin-bottom: 14px;
+      }
+
+      .video-panel__body h2 {
+        font-size: 1.4rem;
+        line-height: 1.2;
+      }
+
+      .video-panel__desc {
+        margin: 0 0 20px;
+        font-size: 1rem;
+        line-height: 1.28;
+      }
+
+      @media (max-width: 1080px) {
+        .video-panel {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .video-panel__thumbs {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body data-page="video">
+    <div data-site-shell>
+      <main class="page-shell page-generic">
+        <section class="web-page graphic-page">
+          <div class="web-page__aside">
+            <span>LITAILONG THINK, DESIGN</span>
+          </div>
+
+          <div class="web-page__content">
+            <div class="section-title section-title--tight">
+              <h1>動画</h1>
+            </div>
+
+            <div class="video-panel">
+              <div class="video-panel__thumbs">
+                <article class="video-card">
+                  <div class="video-card__thumb">
+                    <img src="../assets/images/works/video/capcut/capcut-01.png" alt="春日记录 vlog" />
+                  </div>
+                </article>
+
+                <article class="video-card">
+                  <div class="video-card__thumb">
+                    <img src="../assets/images/works/video/capcut/capcut-02.png" alt="高级小调 vlog" />
+                  </div>
+                </article>
+
+                <article class="video-card">
+                  <div class="video-card__thumb">
+                    <img src="../assets/images/works/video/capcut/capcut-03.png" alt="日常碎片记录 vlog" />
+                  </div>
+                </article>
+
+                <article class="video-card">
+                  <div class="video-card__thumb">
+                    <img src="../assets/images/works/video/capcut/capcut-04.png" alt="Sunroof" />
+                  </div>
+                </article>
+
+                <article class="video-card">
+                  <div class="video-card__thumb">
+                    <img src="../assets/images/works/video/capcut/capcut-05.png" alt="MEMORIES!" />
+                  </div>
+                </article>
+
+                <article class="video-card">
+                  <div class="video-card__thumb">
+                    <img src="../assets/images/works/video/capcut/capcut-06.png" alt="氛围感碎片" />
+                  </div>
+                </article>
+              </div>
+
+              <div class="video-panel__body">
+                <div class="web-item__head">
+                  <h2>テンプレート制作</h2>
+                  <span class="web-item__badge web-item__badge--original">ORIGINAL</span>
+                </div>
+                <p class="video-panel__desc">
+                  個人アカウントの動画運用において、3か月で最大210万回再生の実績を達成しました。企画立案、構成設計、編集、テンプレート選定まで一貫して行い、再生数を伸ばすための改善を継続しています。有料テンプレートも取り入れることで、一般的な無料テンプレートを使用した動画との差別化を図り、完成度の高いコンテンツ制作を意識しています。編集ツールにはCapCutを使用しています。
+                </p>
+                <div class="web-item__tools">
+                  <p>Tool</p>
+                  <div class="web-item__icons">
+                    <img src="../assets/images/toolicon/mark_cupcat.png" alt="CapCut" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="../assets/js/site-app.js?video-rebuild"></script>
+  </body>
+</html>
