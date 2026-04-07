@@ -144,6 +144,50 @@ const setupHomeBackgroundLoop = () => {
 
 setupHomeBackgroundLoop();
 
+const setupHomeAge = () => {
+  if (page !== "home") {
+    return;
+  }
+
+  const ageDisplay = document.querySelector("[data-age-display]");
+
+  if (!ageDisplay) {
+    return;
+  }
+
+  const birthYear = Number(ageDisplay.dataset.birthYear);
+  const birthMonth = Number(ageDisplay.dataset.birthMonth);
+
+  if (!birthYear || !birthMonth) {
+    return;
+  }
+
+  const nowParts = new Intl.DateTimeFormat("ja-JP", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "numeric",
+  })
+    .formatToParts(new Date())
+    .reduce((result, part) => {
+      if (part.type === "year" || part.type === "month") {
+        result[part.type] = Number(part.value);
+      }
+      return result;
+    }, {});
+
+  const currentYear = Number(nowParts.year);
+  const currentMonth = Number(nowParts.month);
+
+  if (!currentYear || !currentMonth) {
+    return;
+  }
+
+  const age = currentYear - birthYear - (currentMonth < birthMonth ? 1 : 0);
+  ageDisplay.textContent = `${birthYear}年${birthMonth}月生まれ(${age}歳)`;
+};
+
+setupHomeAge();
+
 const themeToggle = document.querySelector(".theme-toggle");
 const menuToggle = document.querySelector(".menu-toggle");
 const topbar = document.querySelector(".topbar");
